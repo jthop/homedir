@@ -10,16 +10,15 @@ alias aliases='cat ${HOME}/.bash_aliases && echo "\n"'
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 
+# Git after pre-commit-hooks annoying refusasl to modify the staging area
+alias git-retry='git add -u && !!'
+
 # Docker
 alias up='docker-compose up -d'
 alias down='docker-compose down'
 alias build='docker-compose build'
 alias restart='docker-compose down && sudo docker-compose up -d'
 alias logs='docker-compose logs'
-
-# venv
-alias mkvenv='python3 -m venv env'
-alias activate='source env/bin/activate || echo "No Virtualenv in the current folder"'
 
 # sudo = "sudo !!" - you forget to sudo a command, get access denied, just use oops
 alias oops='sudo !!'

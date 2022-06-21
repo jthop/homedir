@@ -11,7 +11,7 @@ alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 
 # Git after pre-commit-hooks annoying refusasl to modify the staging area
-alias git-retry='git add -u && !!'
+alias retry='git add -u && !!'
 
 # Docker
 alias up='docker-compose up -d'

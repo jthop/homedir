@@ -26,7 +26,7 @@ alias oops='sudo !!'
 # my deploy script when working on docker projects
 deploy() {
   #do things with parameters like $1 such as
-  bump "$1"
+  ican bump $1
   docker-compose build
   docker-compose down
   docker-compose up -d
